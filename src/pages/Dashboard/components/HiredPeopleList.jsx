@@ -1,4 +1,4 @@
-import PeopleListItem from './PeopleListItem'
+import HiredPeopleListItem from './HiredPeopleListItem'
 
 export default function PeopleList(props) {
   
@@ -8,7 +8,7 @@ export default function PeopleList(props) {
   return (
     <ul>
       {people?.map((person, index) => (
-        <PeopleListItem key={index} person={person}/>
+        <HiredPeopleListItem key={index} person={person}/>
       ))}
     </ul>
   );
